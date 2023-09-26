@@ -15,19 +15,25 @@ import CustomPage from "./components/custom/CustomPage";
 
 const baseApiUrl = "http://localhost:5000";
 
+const myTheme = {
+  ...defaultTheme,
+  components: {
+    ...defaultTheme.components,
+    MuiTextField: {
+      defaultProps: {
+        variant: "outlined",
+        InputLabelProps: { shrink: true },
+      },
+    },
+  },
+};
+
 function App() {
   return (
     <Admin
       layout={MyLayout}
       dataProvider={restProvider(baseApiUrl)}
-      theme={{
-        ...defaultTheme,
-        palette: {
-          background: {
-            default: "#fafafb",
-          },
-        },
-      }}
+      theme={myTheme}
     >
       <Resource
         name="posts"

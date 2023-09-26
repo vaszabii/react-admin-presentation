@@ -1,16 +1,13 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import { SelectArrayInput, SimpleForm, TextInput } from "react-admin";
 
 import { EditDialog } from "@react-admin/ra-form-layout";
 
 import { Box, Button, Chip, Typography } from "@mui/material";
-import MuiDialog from "@mui/material/Dialog";
 import EmojiFlagsIcon from "@mui/icons-material/EmojiFlags";
-import SportsScoreIcon from "@mui/icons-material/SportsScore";
-import TourIcon from "@mui/icons-material/Tour";
-import Icon from "@mui/material/Icon";
 
 import { useDialog } from "../../utils/useDialog";
+import DialogInDialog from "./DialogInDialog";
 
 interface ChoiceType {
   id: string;
@@ -54,11 +51,10 @@ const UserEditDialog = () => {
   );
 
   const valueRender = (selected: any) => {
-    console.log(selected);
     if (selected.length === 0) {
       return null;
     }
-    // This will return a comma-separated list of the values.
+
     return (
       <>
         {selected.map((item: string) => (
@@ -83,9 +79,7 @@ const UserEditDialog = () => {
       </SimpleForm>
 
       <Button onClick={onClickHandler}>Open dialog</Button>
-      <MuiDialog open={dialogOpen} onClose={setClose}>
-        Dialog in dialog
-      </MuiDialog>
+      <DialogInDialog open={dialogOpen} onClose={setClose} />
     </EditDialog>
   );
 };
