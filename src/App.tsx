@@ -20,6 +20,7 @@ import CustomPage from "./components/custom/CustomPage";
 import CalendarPage from "./components/calendar/CalendarPage";
 import { dataProviderWithRealtime } from "./dataProvider/dataProvider";
 import LivePage from "./components/live/LivePage";
+import OtherPage from "./components/other/OtherPage";
 
 const myTheme = {
   ...defaultTheme,
@@ -54,6 +55,7 @@ function App() {
       <CustomRoutes>
         <Route path="custom" element={<CustomPage />} />
         <Route path="live" element={<LivePage />} />
+        <Route path="other" element={<OtherPage />} />
       </CustomRoutes>
     </Admin>
   );

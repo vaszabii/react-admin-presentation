@@ -5,6 +5,7 @@ import BookIcon from "@mui/icons-material/Book";
 import PeopleIcon from "@mui/icons-material/People";
 import LabelIcon from "@mui/icons-material/Label";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import BathtubIcon from "@mui/icons-material/Bathtub";
 
 export const CustomMenu = () => {
   return (
@@ -26,6 +27,11 @@ export const CustomMenu = () => {
         to="/live"
         primaryText="Live Calendar"
         leftIcon={<CalendarMonthIcon />}
+      />
+      <Menu.Item
+        to="/other"
+        primaryText="3rd party"
+        leftIcon={<BathtubIcon />}
       />
     </Menu>
   );
