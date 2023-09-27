@@ -15,7 +15,6 @@ const CustomPage = () => {
         <Grid item xs={12} md={12}>
           <PostListSideEdit resource="posts" />
         </Grid>
-
         <Grid item xs={12} lg={6}>
           <EditableUserList />
         </Grid>

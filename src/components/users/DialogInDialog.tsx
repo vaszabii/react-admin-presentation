@@ -1,7 +1,7 @@
 import React from "react";
 import MuiDialog from "@mui/material/Dialog";
-import { Button } from "@mui/material";
-import { useNotify } from "react-admin";
+import { Box, Button } from "@mui/material";
+import { useNotify, useStore } from "react-admin";
 
 interface DialogInDialogProps {
   open: boolean;
@@ -10,6 +10,7 @@ interface DialogInDialogProps {
 
 const DialogInDialog = ({ open, onClose }: DialogInDialogProps) => {
   const notify = useNotify();
+  const [countedNumber, setCountedNumber] = useStore("countedNumber", 0);
 
   const onNotifyClick = () => {
     notify(`You have benn notified`, {
@@ -18,10 +19,23 @@ const DialogInDialog = ({ open, onClose }: DialogInDialogProps) => {
       autoHideDuration: 5000,
     });
   };
+
+  const onIncrease = () => {
+    setCountedNumber(countedNumber + 1);
+  };
+
+  const onDecrease = () => {
+    setCountedNumber(countedNumber - 1);
+  };
+
   return (
     <MuiDialog open={open} onClose={onClose} maxWidth="md" fullWidth>
-      Dialog in dialog
+      Dialog in dialog {countedNumber}
       <Button onClick={onNotifyClick}>Notify me</Button>
+      <Box>
+        <Button onClick={onDecrease}>Counter decrease</Button>
+        <Button onClick={onIncrease}>Counter increase</Button>
+      </Box>
     </MuiDialog>
   );
 };

@@ -1,7 +1,12 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import { Admin, Resource, defaultTheme, CustomRoutes } from "react-admin";
-import restProvider from "ra-data-simple-rest";
+import {
+  Admin,
+  Resource,
+  defaultTheme,
+  CustomRoutes,
+  memoryStore,
+} from "react-admin";
 
 import PersonIcon from "@mui/icons-material/Person";
 
@@ -12,8 +17,9 @@ import PostCreate from "./components/posts/PostCreate";
 import PostEdit from "./components/posts/PostEdit";
 import CustomerList from "./components/customers/CustomerList";
 import CustomPage from "./components/custom/CustomPage";
-
-const baseApiUrl = "http://localhost:5000";
+import CalendarPage from "./components/calendar/CalendarPage";
+import { dataProviderWithRealtime } from "./dataProvider/dataProvider";
+import LivePage from "./components/live/LivePage";
 
 const myTheme = {
   ...defaultTheme,
@@ -32,8 +38,9 @@ function App() {
   return (
     <Admin
       layout={MyLayout}
-      dataProvider={restProvider(baseApiUrl)}
+      dataProvider={dataProviderWithRealtime}
       theme={myTheme}
+      store={memoryStore({ countedNumber: 0 })}
     >
       <Resource
         name="posts"
@@ -43,8 +50,10 @@ function App() {
       />
       <Resource name="users" list={UserList} icon={PersonIcon} />
       <Resource name="customers" list={CustomerList} icon={PersonIcon} />
+      <Resource name="events" list={CalendarPage} icon={PersonIcon} />
       <CustomRoutes>
         <Route path="custom" element={<CustomPage />} />
+        <Route path="live" element={<LivePage />} />
       </CustomRoutes>
     </Admin>
   );
