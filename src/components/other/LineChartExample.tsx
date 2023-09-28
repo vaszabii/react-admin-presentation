@@ -38,7 +38,7 @@ const styles = {
 
 const LineChartExample = () => {
   const { data } = useGetOne("statistics", { id: 2 });
-  console.log(data);
+
   const labels = [
     "January",
     "February",
@@ -75,8 +75,6 @@ const LineChartExample = () => {
     }),
     [data]
   );
-
-  console.log("postsDataset", postsDataset);
 
   return (
     <Box sx={styles.root}>

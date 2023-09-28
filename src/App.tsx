@@ -1,12 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import {
-  Admin,
-  Resource,
-  defaultTheme,
-  CustomRoutes,
-  memoryStore,
-} from "react-admin";
+import { Admin, Resource, CustomRoutes, memoryStore } from "react-admin";
 
 import PersonIcon from "@mui/icons-material/Person";
 
@@ -21,27 +15,17 @@ import CalendarPage from "./components/calendar/CalendarPage";
 import { dataProviderWithRealtime } from "./dataProvider/dataProvider";
 import LivePage from "./components/live/LivePage";
 import OtherPage from "./components/other/OtherPage";
-
-const myTheme = {
-  ...defaultTheme,
-  components: {
-    ...defaultTheme.components,
-    MuiTextField: {
-      defaultProps: {
-        variant: "outlined",
-        InputLabelProps: { shrink: true },
-      },
-    },
-  },
-};
+import { darkTheme, lightTheme } from "./components/layout/themes";
 
 function App() {
   return (
     <Admin
       layout={MyLayout}
       dataProvider={dataProviderWithRealtime}
-      theme={myTheme}
       store={memoryStore({ countedNumber: 0 })}
+      theme={lightTheme}
+      darkTheme={darkTheme}
+      defaultTheme="light"
     >
       <Resource
         name="posts"

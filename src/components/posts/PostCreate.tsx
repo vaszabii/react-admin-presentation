@@ -5,13 +5,7 @@ const PostCreate = ({ ...props }: any) => {
   return (
     <Create title="Post create" {...props}>
       <SimpleForm>
-        <TextInput
-          source="title"
-          fullWidth
-          required
-          variant="outlined"
-          placeholder="Title"
-        />
+        <TextInput source="title" fullWidth required placeholder="Title" />
         <TextInput source="body" multiline fullWidth />
         <TextInput multiline source="title" />
         <DateInput name="Published" source="publishedAt" fullWidth />

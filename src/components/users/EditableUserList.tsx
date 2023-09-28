@@ -20,6 +20,7 @@ const EditableUserList = () => {
       resource="users"
       // hasCreate -> Sima create button-t kitesz, de redirectel a /users oldalra, ezért ebben az esetben ez a megoldás nem jó
       empty={false}
+      disableSyncWithLocation
     >
       <EditableDatagrid
         mutationMode="undoable"
