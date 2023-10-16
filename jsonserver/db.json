@@ -1,0 +1,358 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Post one",
+      "body": "This is post 1 ",
+      "publishedAt": "2020-01-16T22:05:00.000Z",
+      "tags": [
+        {
+          "tagName": "Life"
+        },
+        {
+          "tagName": "Sport"
+        },
+        {
+          "tagName": "Nature"
+        },
+        {
+          "tagName": "Új"
+        },
+        {
+          "tagName": "Még egy létrehozva"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Post two",
+      "body": "This is post 2 body",
+      "publishedAt": "2020-01-11 23:05",
+      "tags": [
+        {
+          "tagName": "Nature"
+        },
+        {
+          "tagName": "Sport"
+        },
+        {
+          "tagName": "Life"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Post 3",
+      "body": "This is post 3 body",
+      "publishedAt": "2020-01-12 23:05",
+      "tags": [
+        {
+          "tagName": "Nature"
+        },
+        {
+          "tagName": "Sport"
+        },
+        {
+          "tagName": "Life"
+        },
+        {
+          "tagName": "Új"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Post four",
+      "body": "This is post 4 body",
+      "publishedAt": "2020-01-13 23:05",
+      "tags": [
+        {
+          "tagName": "Nature"
+        },
+        {
+          "tagName": "Sport"
+        },
+        {
+          "tagName": "Life"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Post five",
+      "body": "This is post 5 body",
+      "publishedAt": "2020-01-14 23:05",
+      "tags": [
+        {
+          "tagName": "Nature"
+        },
+        {
+          "tagName": "Sport"
+        },
+        {
+          "tagName": "Life"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Post six",
+      "body": "This is post 6 body",
+      "publishedAt": "2020-01-15 23:05",
+      "tags": [
+        {
+          "tagName": "Nature"
+        },
+        {
+          "tagName": "Sport"
+        },
+        {
+          "tagName": "Life"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Post seven",
+      "body": "This is post 7 body",
+      "publishedAt": "2020-01-16 23:05",
+      "tags": [
+        {
+          "tagName": "Nature"
+        },
+        {
+          "tagName": "Sport"
+        },
+        {
+          "tagName": "Life"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Post eight",
+      "body": "This is post 8 body",
+      "publishedAt": "2020-01-17 23:05",
+      "tags": [
+        {
+          "tagName": "Nature"
+        },
+        {
+          "tagName": "Sport"
+        },
+        {
+          "tagName": "Life"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Post nine",
+      "body": "This is post 9 body",
+      "publishedAt": "2020-01-18 23:05",
+      "tags": [
+        {
+          "tagName": "Nature"
+        },
+        {
+          "tagName": "Sport"
+        },
+        {
+          "tagName": "Life"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Post ten",
+      "body": "This is post 10 body",
+      "publishedAt": "2020-01-19 23:05",
+      "tags": [
+        {
+          "tagName": "Nature"
+        },
+        {
+          "tagName": "Sport"
+        },
+        {
+          "tagName": "Life"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Jhon Do",
+      "email": "jhondoe@gmail.com",
+      "language": [
+        "English",
+        "German"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "janesmith@gmail.com",
+      "language": [
+        "Spanish",
+        "Portuguese"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Robert Brown",
+      "email": "robertbrown@gmail.com",
+      "language": [
+        "French",
+        "Italian"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Michael Johnson",
+      "email": "michaeljohnson@gmail.com",
+      "language": [
+        "Italian",
+        "English"
+      ]
+    },
+    {
+      "name": "ddas",
+      "email": "dasdd",
+      "id": "5AtGEXY"
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "name": "John Williamssa",
+      "email": "johnwilliams@email.com",
+      "address": "123 Elm Street, Springfield, IL"
+    },
+    {
+      "id": "2",
+      "name": "Linda Garciap",
+      "email": "lindagarcia@email.com",
+      "address": "456 Oak Drive, San Diego, CA"
+    },
+    {
+      "id": "3",
+      "name": "James Andersone",
+      "email": "jamesanderson@email.com",
+      "address": "789 Maple Lane, Atlanta, GA"
+    },
+    {
+      "id": "4",
+      "name": "Patricia Smith",
+      "email": "patriciasmith@email.com",
+      "address": "101 Pine Court, Portland, OR"
+    },
+    {
+      "id": "5",
+      "name": "Michael Johnson",
+      "email": "michaeljohnson@email.com",
+      "address": "202 Birch Boulevard, Dallas, TX"
+    }
+  ],
+  "events": [
+    {
+      "id": "432647",
+      "title": "Team Meeting",
+      "start": "2023-09-27T09:00:00.000Z",
+      "end": "2023-09-27T10:30:00.000Z",
+      "backgroundColor": "#FF5733"
+    },
+    {
+      "id": "432648",
+      "title": "Project Presentation",
+      "start": "2023-09-29T10:00:00.000Z",
+      "end": "2023-09-29T11:00:00.000Z",
+      "backgroundColor": "#33FF57",
+      "allDay": true
+    },
+    {
+      "id": "432649",
+      "title": "Lunch with Client",
+      "start": "2023-09-30T12:00:00.000Z",
+      "end": "2023-09-30T13:30:00.000Z",
+      "backgroundColor": "#5733FF"
+    },
+    {
+      "id": "432650",
+      "title": "Development Session",
+      "start": "2023-10-01T14:00:00.000Z",
+      "end": "2023-10-01T16:00:00.000Z",
+      "backgroundColor": "#FF33A1"
+    },
+    {
+      "id": "432651",
+      "title": "Design Review",
+      "start": "2023-10-02T15:00:00.000Z",
+      "end": "2023-10-02T16:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "id": "432652",
+      "title": "Stakeholder Meeting",
+      "start": "2023-10-03T10:00:00.000Z",
+      "end": "2023-10-03T11:30:00.000Z"
+    },
+    {
+      "id": "432653",
+      "title": "Product Testing",
+      "start": "2023-10-04T12:00:00.000Z",
+      "end": "2023-10-04T13:00:00.000Z"
+    },
+    {
+      "id": "432654",
+      "title": "Feedback Session",
+      "start": "2023-10-05T14:00:00.000Z",
+      "end": "2023-10-05T15:30:00.000Z"
+    },
+    {
+      "id": "432655",
+      "title": "Code Review",
+      "start": "2023-10-06T09:00:00.000Z",
+      "end": "2023-10-06T10:30:00.000Z"
+    },
+    {
+      "id": "432656",
+      "title": "Final Presentation",
+      "start": "2023-10-07T11:00:00.000Z",
+      "end": "2023-10-07T12:30:00.000Z"
+    },
+    {
+      "allDay": false,
+      "title": "Új ",
+      "start": "2023-09-26T00:00:00+02:00",
+      "end": "2023-09-27T00:00:00+02:00",
+      "id": "JqKMEIK"
+    }
+  ],
+  "statistics": [
+    {
+      "id": 1,
+      "hungarian": 11,
+      "english": 5,
+      "spanish": 3,
+      "italian": 2,
+      "french": 2
+    },
+    {
+      "id": 2,
+      "January": 45,
+      "February": 53,
+      "March": 49,
+      "April": 60,
+      "May": 56,
+      "June": 48,
+      "July": 52,
+      "August": 59,
+      "September": 54,
+      "October": 58,
+      "November": 50,
+      "December": 63
+    }
+  ]
+}

@@ -23,7 +23,6 @@ const UserList = () => {
         <EditButton />
         <DeleteButton />
       </Datagrid>
-
       <UserEditDialog />
     </List>
   );

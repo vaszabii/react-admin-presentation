@@ -5,11 +5,13 @@ import { Chip } from "@mui/material";
 const LanguagesField = () => {
   const record = useRecordContext();
   return (
-    <>
-      {record.language.map((item: string) => (
-        <Chip label={item} key={item} />
-      ))}
-    </>
+    record.language && (
+      <>
+        {record.language.map((item: string) => (
+          <Chip label={item} key={item} />
+        ))}
+      </>
+    )
   );
 };
 
